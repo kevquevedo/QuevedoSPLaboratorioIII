@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/spinner.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/persona.js"></script>
+    <script src="js/cliente.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SP - Kevin Quevedo</title>
+</head>
+<body>
+
+<div id="divTotal">
+    <h1 id="titulo">ABM PERSONAS</h6>  
+
+</div>
+
+<div id="divSpinner">
+    
+
+</div>
+
+<div id="divDatos">
+
+    <!--Seccion ID.-->
+    <br>
+    <br>
+    <label for="txtId">ID: </label>
+    <input type="text" name="txtId" id="txtId" disabled = "disabled">
+    <br>
+    <br>
+    <!--Seccion Nombre.-->
+    <label for="txtNombre">NOMBRE: </label>
+    <input type="text" name="txtNombre" id="txtNombre">
+    <br>
+    <br>
+    <!--Seccion Apellido.-->
+    <label for="txtApellido">APELLIDO: </label>
+    <input type="text" name="txtApellido" id="txtApellido">
+    <br>
+    <br>
+    <!--Seccion Edad.-->
+    <label for="txtEdad">EDAD: </label>
+    <input type="text" name="txtEdad" id="txtEdad">
+    <br>
+    <br>
+    <!--Seccion Sexo.-->
+    <label for="txtSexo">SEXO: </label>
+    <select id="sel_sexo">
+        <option id="Male">Masculino</option>
+        <option id="Female">Femenino</option>
+    </select> 
+    <br>
+    <br>
+    <!--Boton Agregar.-->
+    <input type="button" value="Agregar" id="btnAgregar" class="btnAgregar">
+    <!--Boton Eliminar.-->
+    <input type="button" value="Eliminar" id="btnEliminar" class="btnEliminar">
+    <!--Boton Limpiar.-->
+    <input type="button" value="Limpiar" id="btnLimpiar" class="btnLimpiar">
+</div>
+
+
+
+<div id="divFiltros">
+    <h1 id="titulo">FILTROS</h6>  
+</div>
+<div id="divFiltrosDatos">
+    <!--Promedio.-->
+    <label for="txtPromedio">PROMEDIO: </label>
+    <input type="text" name="txtPromedio" id="txtPromedio">
+    <input type="button" value="CALCULAR PROMEDIO" id="btnPromedio" class="btnPromedio">
+    <br>
+    <br>
+    <!--Filtrar Por.-->
+    <label for="txtPromedio">FILTRAR POR: </label>
+    <select id="sel_sexoFiltro">
+        <option id="MaleFiltro">Masculino</option>
+        <option id="FemaleFiltro">Femenino</option>
+    </select> 
+    <input type="button" value="FILTRAR" id="btnFiltrar" class="btnFiltrar">
+</div>
+
+
+
+<div id="divPersonas">
+    <h1 id="titulo">LISTA DE PERSONAS</h6>  
+</div>
+<div id="divContenedorTabla">
+    <table id="tablaTitulo">
+        <tr  id="header"> 
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+        </tr>
+    </table>
+    <div id="divTabla">
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
